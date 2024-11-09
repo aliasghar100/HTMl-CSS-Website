@@ -1,0 +1,197 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header with background video */
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: slideIn 3s ease-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background: #00d2ff;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #00a8cc;
+}
+
+.ai-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    background: #222;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Video & Image Gallery */
+.video-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background: #333;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.image {
+    width: 30%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 3px solid #00d2ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 1rem;
+}
+
+footer p {
+    color: #888;
+}
+
+/* Animations */
+@keyframes slideIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .video-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+        height: 150px;
+    }
+}
+@keyframes shine {
+    0% {
+      background-position: -200%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+  
+/* Gradient text */
+@keyframes shine {
+    0% {
+      background-position: -200%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+  
+  /* Gradient text */
+.gradient-text {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffffff, #ffffff); /* Gradient colors */
+    -webkit-background-clip: text; /* Chrome, Safari */
+    background-clip: text; /* Firefox */
+    color: transparent; /* Make text color transparent so gradient shows through */
+  }
+  
+  
